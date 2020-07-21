@@ -13,13 +13,10 @@ class Transfer
    self.sender.valid? && self.receiver.valid?
  end
  def execute_transaction
-  while self.sender.balance -= 50
-   self.receiver.balance += 50
+   self.sender.balance -= amount
+   self.receiver.balance += amount
    self.status = "complete"
-   unless
-   self.status == "complete"
-     end
-   end
+  
  end
    
  
