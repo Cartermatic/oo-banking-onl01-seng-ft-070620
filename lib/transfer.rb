@@ -23,7 +23,7 @@ class Transfer
   end
  end
    def reverse_transfer
-     self.execute_transaction.reverse
+     self.status = "reverse"
    end
  
  
